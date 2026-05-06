@@ -1,0 +1,29 @@
+Backdoor Techniques Document
+
+1. Socket-based Backdoors:
+   - Utilize standard TCP/UDP sockets to establish communication between attacker and target systems.
+   - Example: Creating a reverse shell using Python's socket library.
+
+2. Hidden Services:
+   - Deploy hidden services on non-standard ports to obscure backdoor presence.
+   - Example: Running a web server on port 8080 for data exfiltration.
+
+3. Persistence Mechanisms:
+   - Ensure backdoors remain active across reboots by integrating with system startup scripts or modifying registry settings (Windows).
+   - Example: Adding a custom script to /etc/rc.local (Linux).
+
+4. Data Exfiltration Techniques:
+   - Use file transfer protocols like FTP or SFTP to exfiltrate data securely.
+   - Example: Implementing `file_downloader.sh` to download files from compromised systems.
+
+5. Obfuscation Methods:
+   - Obfuscate backdoor code and communications to evade detection by security software.
+   - Example: Encoding socket payloads using base64 before transmission.
+
+6. Command Execution:
+   - Allow execution of arbitrary commands on the target system through the backdoor interface.
+   - Example: Implementing a reverse shell in `my_custom_tool.py` for interactive command execution.
+
+7. Payload Delivery:
+   - Inject malware payloads directly into vulnerable systems via identified backdoors.
+   - Example: Using `malware_injection.sh` to deploy ransomware and viruses on compromised devices.
